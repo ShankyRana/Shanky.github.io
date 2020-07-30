@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="src/index.js" async></script>
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="main-container">
+    <div class="server-container">
+      <div class="server-info">
+        <div>No. of Servers: <span id="noOfServers"></span></div>
+        <div>No. of Servers Busy: <span id="runningServers">0</span> </div>
+      </div>
+      <div class="server-info">
+        <div>Total Tasks: <span id="totalTasks">0</span></div>
+        <div>Tasks Completed: <span id="tasksCompleted">0</span> </div>
+      </div>
+      <div class="server-options">
+        <button class="server-add" onclick="addServer()">
+          <span>Add Server </span>
+        </button>
+        <button class="server-remove" onclick="removeServer()">
+          <span>Remove Server</span>
+        </button>
+      </div>
+    </div>
+    <div class="task-container">
+      <div class="task-options">
+        <input id="task-input" id="tasks" default="0" type="number" placeholder="Tasks" />
+        <button class="task-button" onclick="addTask()">
+          <span>Add Task</span>
+        </button>
+      </div>
+      <div id="task-bars"></div>
+      <ul id="task-list"></ul>
+    </div>
+  </div>
+
+</body>
+
+</html>
